@@ -40,8 +40,7 @@ sudo podman run --privileged --rm -it -v /dev:/dev -v $PWD:/code:z -w /code quay
 ## Building:
 Run these commands inside the downloaded image:
 ```
-# Uncomment if you need El Repo, been having issues with it install kernel-ml packages despite me not having a single El Repo package installed...
-# rpm -i https://www.elrepo.org/elrepo-release-10.el10.elrepo.noarch.rpm
+rpm -i https://www.elrepo.org/elrepo-release-10.el10.elrepo.noarch.rpm
 dnf -y install epel-release && dnf -y install kiwi policycoreutils && dnf -y --refresh update
 kiwi-ng --type=iso --profile="Pumice" --color-output system build --description="." --target-dir ./outdir
 ```
