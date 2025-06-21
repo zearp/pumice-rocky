@@ -130,8 +130,10 @@
 		<package name="yum-utils"/>
 		<package name="zram-generator"/>
 		<package name="zsh"/>
+		<package name="zstd"/>
 		<ignore name="gfs2-utils"/>
 		<ignore name="gnome-tour"/>
+		<ignore name="kernel-srpm-macros"/>
 		<ignore name="PackageKit-command-not-found"/>
 	</packages>
 	<packages type="image" profiles="Pumice">
